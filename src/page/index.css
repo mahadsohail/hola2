@@ -1,8 +1,9 @@
+
 :root {
   --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-    "Source Han Sans CN", sans-serif;
+  Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+  "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+  "Source Han Sans CN", sans-serif;
 }
 
 .main-container {
@@ -29,6 +30,9 @@ button {
   background: #ffffff;
   overflow: hidden;
 }
+
+
+
 .flex-row-ae {
   position: relative;
   width: 1299px;
@@ -36,6 +40,7 @@ button {
   margin: 33px 0 0 59px;
   z-index: 185;
 }
+
 .logo {
   display: flex;
   align-items: flex-start;
@@ -53,6 +58,7 @@ button {
   white-space: nowrap;
   z-index: 4;
 }
+
 .image {
   position: absolute;
   width: 210px;
@@ -60,10 +66,11 @@ button {
   top: 0;
   left: 10px;
   background: url(../assets/images/806cea73e8fe9ee383a3604f0a6bc6a1707edced.png)
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
   z-index: 11;
 }
+
 .image-1 {
   position: absolute;
   width: 73px;
@@ -71,10 +78,11 @@ button {
   top: 7px;
   left: 809px;
   background: url(../assets/images/37f363fd9ea40478ab88bf9db8447d6b3d3fd77c.png)
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
   z-index: 17;
 }
+
 .frame {
   display: flex;
   align-items: flex-start;
@@ -86,12 +94,12 @@ button {
   top: 8px;
   left: 713px;
 }
+
 .home {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  flex-basis: auto;
   position: relative;
   width: 50.6px;
   height: 24.201px;
@@ -104,12 +112,12 @@ button {
   white-space: nowrap;
   z-index: 1;
 }
+
 .about-us {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  flex-basis: auto;
   position: relative;
   width: 74.846px;
   height: 24.201px;
@@ -122,12 +130,12 @@ button {
   white-space: nowrap;
   z-index: 2;
 }
+
 .product {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  flex-basis: auto;
   position: relative;
   width: 70.63px;
   height: 24.201px;
@@ -140,6 +148,7 @@ button {
   white-space: nowrap;
   z-index: 3;
 }
+
 .vuesax-linear-call-calling {
   position: absolute;
   width: 24px;
@@ -147,10 +156,11 @@ button {
   top: 8px;
   left: 1165px;
   background: url(../assets/images/4af01568-5a38-409f-ae82-3827a9212017.png)
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
   z-index: 10;
 }
+
 .vuesax-linear-profile-circle {
   position: absolute;
   width: 24px;
@@ -158,10 +168,11 @@ button {
   top: 8px;
   left: 1217px;
   background: url(../assets/images/7a136732-4514-4e9e-8e68-dbaba1109f1a.png)
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
   z-index: 8;
 }
+
 .vuesax-linear-shopping-cart {
   position: absolute;
   width: 30px;
@@ -169,10 +180,69 @@ button {
   top: 8px;
   left: 1269px;
   background: url(../assets/images/e0861ba0-cf64-434e-a6e6-f5a8b490e473.png)
-    no-repeat center;
+  no-repeat center;
   background-size: 100% 100%;
   z-index: 6;
 }
+
+/* Media Queries for Mobile Devices */
+/*@media screen and (max-width: 768px) {*/
+/*  .frame {*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    gap: 20px;*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*    top: 16px;*/
+/*    left: 0;*/
+/*  }*/
+
+/*  .home,*/
+/*  .about-us,*/
+/*  .product {*/
+/*    font-size: 14px;*/
+/*    line-height: 20px;*/
+/*    width: auto;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*  .vuesax-linear-call-calling,*/
+/*  .vuesax-linear-profile-circle,*/
+/*  .vuesax-linear-shopping-cart {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    top: auto;*/
+/*    left: auto;*/
+/*    margin: 10px 5px;*/
+/*  }*/
+/*}*/
+
+/*@media screen and (max-width: 480px) {*/
+/*  .frame {*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*  }*/
+
+/*  .home,*/
+/*  .about-us,*/
+/*  .product {*/
+/*    font-size: 12px;*/
+/*    line-height: 16px;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*  .vuesax-linear-call-calling,*/
+/*  .vuesax-linear-profile-circle,*/
+/*  .vuesax-linear-shopping-cart {*/
+/*    width: 18px;*/
+/*    height: 18px;*/
+/*    margin: 5px auto;*/
+/*  }*/
+/*}*/
+
+
+
 .buttons {
   display: flex;
   align-items: flex-start;
@@ -185,6 +255,7 @@ button {
   left: 1067px;
   z-index: 185;
 }
+
 .button-primary {
   display: flex;
   align-items: flex-start;
@@ -197,6 +268,7 @@ button {
   z-index: 186;
   border-radius: 16px;
 }
+
 .try-it-free {
   flex-shrink: 0;
   flex-basis: auto;
@@ -211,6 +283,7 @@ button {
   white-space: nowrap;
   z-index: 187;
 }
+
 .button-primary-2 {
   display: flex;
   align-items: flex-start;
@@ -226,6 +299,7 @@ button {
   z-index: 188;
   border-radius: 16px;
 }
+
 .try-it-free-3 {
   flex-shrink: 0;
   flex-basis: auto;
@@ -240,6 +314,7 @@ button {
   white-space: nowrap;
   z-index: 189;
 }
+
 .join-now-via-telegram {
   display: flex;
   align-items: flex-start;
@@ -257,6 +332,7 @@ button {
   text-align: left;
   z-index: 16;
 }
+
 .flex-row-bc {
   position: relative;
   width: 1514px;
@@ -264,6 +340,7 @@ button {
   margin: 17.949px 0 0 -29px;
   z-index: 58;
 }
+
 .mob {
   position: absolute;
   width: 747.935px;
@@ -271,10 +348,99 @@ button {
   top: 0;
   left: 682.355px;
   background: url(../assets/images/f9228ff7-7f34-4bb2-a81f-537bb4e043dc.png)
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
   z-index: 21;
 }
+
+/* Media Queries for Mobile Devices */
+/*@media screen and (max-width: 768px) {*/
+/*  .buttons {*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*    position: relative;*/
+/*    width: auto;*/
+/*    top: 10px;*/
+/*    left: 10px;*/
+/*  }*/
+
+/*  .button-primary, .button-primary-2 {*/
+/*    width: 100%;*/
+/*    padding: 14px;*/
+/*    font-size: 14px;*/
+/*    gap: 8px;*/
+/*  }*/
+
+/*  .try-it-free, .try-it-free-3 {*/
+/*    font-size: 14px;*/
+/*  }*/
+
+/*  .join-now-via-telegram {*/
+/*    position: relative;*/
+/*    top: 10px;*/
+/*    left: 0;*/
+/*    font-size: 14px;*/
+/*    width: auto;*/
+/*  }*/
+
+/*  .flex-row-bc {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*  }*/
+
+/*  .mob {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background-size: cover;*/
+/*  }*/
+/*}*/
+
+/* Media Queries for Smaller Screens */
+/*@media screen and (max-width: 786px) {*/
+/*  .buttons {*/
+/*    flex-direction: column;*/
+/*    gap: 6px;*/
+/*    width: auto;*/
+/*    top: 8px;*/
+/*    left: 0;*/
+/*  }*/
+
+/*  .button-primary, .button-primary-2 {*/
+/*    width: 100%;*/
+/*    padding: 12px;*/
+/*    font-size: 12px;*/
+/*    gap: 6px;*/
+/*  }*/
+
+/*  .try-it-free, .try-it-free-3 {*/
+/*    font-size: 12px;*/
+/*  }*/
+
+/*  .join-now-via-telegram {*/
+/*    position: relative;*/
+/*    top: 8px;*/
+/*    left: 0;*/
+/*    font-size: 12px;*/
+/*    width: auto;*/
+/*  }*/
+
+/*  .flex-row-bc {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*  }*/
+
+/*  .mob {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background-size: cover;*/
+/*  }*/
+/*}*/
+
 .frame-4 {
   display: flex;
   align-items: flex-start;
@@ -415,6 +581,10 @@ button {
   text-align: left;
   z-index: 14;
 }
+
+
+
+
 .frame-8 {
   display: flex;
   align-items: flex-start;
@@ -811,28 +981,35 @@ button {
   z-index: 182;
   border-radius: 29px;
 }
+
 .image-1e {
   position: relative;
   width: 923px;
   height: 583px;
   margin: 0 0 0 1px;
-  background: url(../assets/images/b4ce5044bcd4849f3c0ba0f925faa0c02ae93b64.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 56;
-  overflow: visible auto;
+  overflow: hidden; /* Prevents overflow outside the boundaries */
   border-radius: 20.437px;
 }
+
+.responsive-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video scales properly */
+  border-radius: 20.437px; /* Applies the same border radius */
+}
+
 .image-1f {
   position: relative;
   width: 149px;
   height: 149px;
   margin: 199px 0 0 400px;
   background: url(../assets/images/634427557e056140a3f66d7fadc8656b54a35c8c.png)
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
   z-index: 183;
 }
+
 .rectangle-20 {
   position: relative;
   width: 1440px;
@@ -2469,3 +2646,4 @@ button {
   background-size: cover;
   z-index: 18;
 }
+
