@@ -1,4 +1,5 @@
-import React, {useRef, useState} from "react";
+//import React, {useRef, useState} from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./index.css";
 import video from "../assets/videos/sample-video.mp4";
 
@@ -6,6 +7,17 @@ import video from "../assets/videos/sample-video.mp4";
 export default function Main() {
 
   const videoRef = useRef(null);
+
+  const [timeLeft, setTimeLeft] = useState(959); // Initialize with total seconds (15:59 = 959 seconds)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(timer); // Cleanup the interval on component unmount
+  }, []);
+
 
   const togglePlayPause = () => {
     if (videoRef.current) {
@@ -15,6 +27,16 @@ export default function Main() {
         videoRef.current.pause();
       }
     }
+  };
+
+
+  // Helper function to format timeLeft into MM:SS format
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${minutes.toString().padStart(2, "0")}:${secs
+        .toString()
+        .padStart(2, "0")}`;
   };
 
     return (
@@ -143,7 +165,7 @@ export default function Main() {
             <div className="flex-row-fc">
               <div className="rectangle-21">
                 <div className="rectangle-22">
-                  <span className="choose-plan">15:59 Min Left</span>
+                  <span className="choose-plan">{`${formatTime(timeLeft)} Min Left`}</span>
                 </div>
                 <div className="price">
                   <span className="dollar">$997</span>
